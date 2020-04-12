@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 INSTALLED_APPS = [
     'blog.apps.BlogConfig',
+    'crispy_forms',
     'users.apps.UsersConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -126,3 +127,4 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+LOGIN_REDIRECT_URL = 'mediacare'
